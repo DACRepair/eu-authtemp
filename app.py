@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from App.flask import app, sql
 from App.config import FLASK_HOST, FLASK_PORT
 
