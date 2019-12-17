@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to the {{config['TITLE']}}.</h1>
+    <h3>
+        Notice: This application will log you into twitch and store api information used to access your account.<br/>
+        If you do not want your information logged, please do not use this site.<br/><br/>
+        If you put your information in here and do not want it there any more, please go to
+        <a href="https://www.twitch.tv/settings/connections">Account Connections</a> to remove the app connection.
+    </h3>
+    <br/><br/>
+    <div class="col-md-5">
+        <form class="form-horizontal" method="post" action="/create-request">
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary" style="background-color: #9146FF">
+                            <img src="https://brand.twitch.tv/assets/logos/svg/glitch/purple.svg"
+                                 style="width: auto; max-height: 22px"> &nbsp;Connect to Twitch.tv
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock %}
