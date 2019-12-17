@@ -1,8 +1,7 @@
 import os
 import requests
 import uuid
-import pprint
-from flask import Flask, render_template, redirect, request, session, url_for
+from flask import Flask, render_template, redirect, request, session
 from flask_admin import Admin
 from flask_bootstrap import Bootstrap
 from flask_session import Session
